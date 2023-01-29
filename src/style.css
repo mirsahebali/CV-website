@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #02080d;
+  font-family: "Source Code Pro", monospace;
+  overflow-x: hidden;
+}
+
+hr {
+  border-bottom: dotted;
+  border-top: none;
+  border-width: 50%;
+  width: 60%;
+opacity: .6;
+position: absolute;
+left: 20%;
+
+}
+
+.title-text {
+  z-index: 100000;
+  color: white;
+}
+
+@media (min-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 770px) {
+  .vector-cone {
+    position: absolute;
+    right: 0px;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: row;
+  }
+  .title {
+    width: 7rem;
+  }
+  .me {
+    top: 700px;
+  }
+
+  img.cube {
+    position: absolute;
+    left: 100px;
+  }
+}
+svg {
+  display: inline;
+}
+
+/* Images */
+.vector-cone {
+  float: right;
+  margin-right: 0px;
+}
+
+/* Texts */
+
+.logo {
+  width: 5%;
+  height: 5%;
+  z-index: 2;
+}
+.title {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.me {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.btn-me {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  display: inline-flex;
+}
+
+/* About me */
+
+#about-me {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  color: aliceblue;
+  top: 100%;
+  left: 10%;
+  right: 10%;
+  font-size: 1.3rem;
+}
+
+.text-center {
+  padding-top: 5%;
+}
+
+.about-me-text {
+  color: rgb(48, 170, 142);
+}
+
+.brand {
+  margin-right: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.skills {
+  padding: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.express {
+  font-weight: 100;
+}
+
+img.cube {
+  width: 30rem;
+  float: right;
+  position: absolute;
+  z-index: -11;
+  left: 60rem;
+}
+/* Credentials */
+
+#credentials {
+  position: absolute;
+  top: 220%;
+  left: 10%;
+}
+
+.cylinder {
+  margin: 0px;
+  position: absolute;
+  top: 80%;
+  right: 95%;
+}
+
+.skills-education {
+  position: absolute;
+  left: 35rem;
+}
+
+/* Blue hover effect on Title */
+
+.hover-effect {
+  --s: 0.1em; /* the thickness of the line */
+  --c: #00ccff; /* the color */
+
+  color: #0000;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, rgb(255, 254, 254) 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.hover-effect:hover {
+  --_p: 100%;
+}
+
+/* Color gradient text css */
+
+.main-div {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+} 
+
+
+
+.effect-h1 , .effect-text{
+  margin: 0;
+}
+
+.effect-h1 {
+  font-size: 10vmin;
+  line-height: 1.1;
+  max-inline-size: 15ch;
+  margin: auto;
+}
+
+.effect-text {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  margin-top: 1ch;
+  line-height: 1.35;
+  max-inline-size: 40ch;
+  margin: auto;
+}
+
+/* Button hover */
+
+.button-89 {
+  --b: 3px;   
+  --s: .45em; 
+  --color: #9b9b9b;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+/* Images */
+
