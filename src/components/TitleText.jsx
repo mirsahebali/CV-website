@@ -28,13 +28,13 @@ function TitleText({ text, className, size }) {
     .join("");
 
   return (
-    <h1
+    <p
       style={{ fontSize: { size } }}
       className={className}
       onMouseOver={() => setIterations(0)}
     >
       {displayedText}
-    </h1>
+    </p>
   );
 }
 

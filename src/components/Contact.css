@@ -1,0 +1,60 @@
+#contact{
+  position: relative;
+  top: 110rem;
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+
+}
+.contact-header {
+          font-size: 32px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #deff05;
+          margin-bottom: 20px;
+        }
+        
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-links {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.email:hover{
+color: rgb(134, 226, 134);
+transition: all 0.3s ease-in-out;
+
+}
+.linkedin:hover{
+color: rgb(74, 74, 173);
+transition: all 0.3s ease-in-out;
+
+}
+.cv:hover{
+color: rgb(207, 77, 77);
+transition: all 0.3s ease-in-out;
+
+}
+
+.contact-links i {
+  margin-right: 10px;
+}
+
+a{
+padding: 2rem;
+}
